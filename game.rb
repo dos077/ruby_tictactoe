@@ -73,6 +73,7 @@ p2_name = gets.chomp
 
 game = Game.new(p1_name, p2_name)
 puts "The board is divided to 9 squares: \n1 2 3\n4 5 6\n7 8 9"
+puts "Ready player one."
 
 until game.victory?
     p1_turn = true
@@ -105,9 +106,9 @@ end
 
 case game.victory?
 when 1
-    puts "#{game.p1_name} have won!"
+    puts "Congradulation #{game.p1_name}, you won!"
 when 2
-    puts "#{game.p2_name} have won!"
+    puts "Congradulation #{game.p2_name}, you won!"
 when 3
     puts "It's a draw."
 end
